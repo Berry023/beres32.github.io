@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+        v prirodzenom jazyku automaticky vygenerovať trojrozmerný model v programe Blender.
+        Hlavnou časťou riešenia je využitie veľkého jazykového modelu, ktorý bude lokálne
+        nainštalovaný a prispôsobený na oblasť 3D modelovania.
+      </p>
+      <p>
+        Systém bude fungovať tak, že jazykový model rozloží zložitejší objekt na jednotlivé časti,
         opíše ich základné parametre a tieto údaje sa následne spracujú v Pythone a prenesú do Blenderu.
         Celý proces od textového zadania cez odpoveď modelu až po finálny 3D objekt bude testovaný
         na viacerých príkladoch.
@@ -13,51 +19,58 @@
       </p>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Zoznam zdrojov</h2>
-      <div class="list">
-        <div class="list-item"><a href="#" target="_blank">Language Models are Few-Shot Learners</a></div>
-        <div class="list-item"><a href="#" target="_blank">Qwen2.5-Coder Technical Report</a></div>
-        <div class="list-item"><a href="#" target="_blank">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a></div>
-        <div class="list-item"><a href="#" target="_blank">3D-GPT: Procedural 3D Modeling with Large Language Models</a></div>
-        <div class="list-item"><a href="#" target="_blank">LL3M: Large Language 3D Modelers</a></div>
-        <div class="list-item"><a href="#" target="_blank">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a></div>
-        <div class="list-item"><a href="#" target="_blank">Blender Python API</a></div>
-        <div class="list-item"><a href="#" target="_blank">Ollama</a></div>
+      <div class="item-list">
+        <div class="item"><a href="#" target="_blank">Language Models are Few-Shot Learners</a></div>
+        <div class="item"><a href="#" target="_blank">Qwen2.5-Coder Technical Report</a></div>
+        <div class="item"><a href="#" target="_blank">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a></div>
+        <div class="item"><a href="#" target="_blank">3D-GPT: Procedural 3D Modeling with Large Language Models</a></div>
+        <div class="item"><a href="#" target="_blank">LL3M: Large Language 3D Modelers</a></div>
+        <div class="item"><a href="#" target="_blank">Blender Python API</a></div>
+        <div class="item"><a href="#" target="_blank">Ollama</a></div>
       </div>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Aktuálny stav diplomovej práce</h2>
       <p>
-        Všetky moje napísané texty, screenshoty a zdrojové kódy nájdete v mojom
+        <a href="files/Generovanie_3D_modelov_pomocou_velkeho_jazykoveho_modelu.pdf" target="_blank">
+          Otvoriť prácu (PDF)
+        </a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Texty, obrázky, experimenty a zdrojové kódy</h2>
+      <p>
+        Všetky napísané texty, obrázky, experimenty a zdrojové kódy nájdete v mojom
         <a href="#" target="_blank">GitHub repozitári</a>.
       </p>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Denník</h2>
-      <p class="small-text">Posledná aktualizácia: 22.4.2025</p>
-
-      <div class="list">
-        <div class="list-item">Týždeň 1 - Vytvorenie webstránky.</div>
-        <div class="list-item">Týždeň 2 - Fotenie nového modelu plachetnice a vytvorenie digitálneho meshu pomocou fotogrametrie.</div>
-        <div class="list-item">Týždeň 3 - Menenie kódu a úprava nedostatkov pri pohybe časti lode.</div>
-        <div class="list-item">Týždeň 4 - Úprava modelu získaného z fotogrametrie, kombinácia Blenderu, Meshy a ručného vytvárania častí modelu.</div>
-        <div class="list-item">Týždeň 5 - Úprava modelu a problém pri importe do Unreal Engine.</div>
-        <div class="list-item">Týždeň 6 - Model importovaný v Unreal Engine, kód pre starý model nefungoval správne pre nový model.</div>
-        <div class="list-item">Týždeň 7 - Zistenie chyby v kóde, úprava premennej wind strength namiesto wind speed.</div>
-        <div class="list-item">Týždeň 8 - Úprava fyzikálnych vzorcov a čistenie kódu do funkcií.</div>
-        <div class="list-item">Týždeň 9 - Začatie písania písomnej verzie bakalárky.</div>
-        <div class="list-item">Týždeň 10 -</div>
-        <div class="list-item">Týždeň 11 -</div>
-        <div class="list-item">Týždeň 12 -</div>
+      <div class="item-list">
+        <div class="item">
+          <strong>Február -</strong> Spresnenie témy diplomovej práce, zoznámenie sa s cieľom práce a prvý prieskum možností generovania 3D modelov pomocou jazykových modelov.
+        </div>
+        <div class="item">
+          <strong>Marec -</strong> Štúdium existujúcich riešení a súvisiacich prác, hlavne prístupov založených na generovaní kódu pre Blender a na využití veľkých jazykových modelov.
+        </div>
+        <div class="item">
+          <strong>Apríl -</strong> Príprava teoretickej časti práce, testovanie Blender Python API a skúšanie jednoduchých skriptov na vytváranie základných 3D objektov.
+        </div>
+        <div class="item">
+          <strong>Máj -</strong> Návrh základnej pipeline medzi textovým zadaním, jazykovým modelom, Pythonom a Blenderom. Príprava prvých testovacích príkladov pre generovanie objektov.
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Filip Béreš
+    © 2026 Bc. Filip Béreš
   </footer>
 </body>
+</html>
 </html>
