@@ -1,7 +1,5 @@
+
 <!DOCTYPE html>
-<html lang="sk">
-<head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diplomová práca - Generovanie 3D modelov pomocou veľkého jazykového modelu</title>
 
@@ -62,21 +60,9 @@
       border-radius: 9px;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
     }
-
+    
     .card h2 {
-      margin: 0 0 18px;
-      padding-bottom: 8px;
-      border-bottom: 3px solid #004e70;
-      color: #004e70;
-      font-size: 28px;
-      line-height: 1.25;
-    }
-
-    .card h3 {
-      margin: 18px 0 7px;
-      font-size: 20px;
-      color: #111;
-  }
+      font-size: 17px;
     }
 
     a {
@@ -141,14 +127,14 @@
       }
     }
   </style>
-</head> 
+</head>
 
 <body>
       <h3>Anotácia:</h3>
       <p>
         Diplomová práca sa zameriava na vytvorenie systému, ktorý dokáže z textového zadania
         v prirodzenom jazyku automaticky vygenerovať trojrozmerný model v programe Blender.
-        Hlavnou časťou riešenia je využitie veľkého jazykového modelu, ktorý bude lokálne
+        Kľúčovým prvkom riešenia je využitie veľkého jazykového modelu, ktorý bude lokálne
         nainštalovaný a prispôsobený na oblasť 3D modelovania.
       </p>
       <p>
@@ -170,13 +156,14 @@
     <section class="card">
       <h2>Zoznam zdrojov</h2>
       <div class="item-list">
-        <div class="item"><a href="#" target="_blank">Language Models are Few-Shot Learners</a></div>
-        <div class="item"><a href="#" target="_blank">Qwen2.5-Coder Technical Report</a></div>
-        <div class="item"><a href="#" target="_blank">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a></div>
-        <div class="item"><a href="#" target="_blank">3D-GPT: Procedural 3D Modeling with Large Language Models</a></div>
-        <div class="item"><a href="#" target="_blank">LL3M: Large Language 3D Modelers</a></div>
-        <div class="item"><a href="#" target="_blank">Blender Python API</a></div>
-        <div class="item"><a href="#" target="_blank">Ollama</a></div>
+        <div class="item"><a href="https://arxiv.org/abs/2409.12186" target="_blank">Qwen2.5-Coder Technical Report</a></div>
+        <div class="item"><a href="https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html" target="_blank">Language Models are Few-Shot Learners</a></div>
+        <div class="item"><a href="https://arxiv.org/abs/2201.11903" target="_blank">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a></div>
+        <div class="item"><a href="https://arxiv.org/abs/2005.11401" target="_blank">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a></div>
+        <div class="item"><a href="https://arxiv.org/abs/2310.12945" target="_blank">3D-GPT: Procedural 3D Modeling with Large Language Models</a></div>
+        <div class="item"><a href="https://arxiv.org/abs/2508.08228" target="_blank">LL3M: Large Language 3D Modelers</a></div>
+        <div class="item"><a href="https://docs.blender.org/api/current/" target="_blank">Blender Python API</a></div>
+        <div class="item"><a href="https://ollama.com/" target="_blank">Ollama</a></div>
       </div>
     </section>
 
@@ -193,7 +180,7 @@
       <h2>Texty, obrázky, experimenty a zdrojové kódy</h2>
       <p>
         Všetky napísané texty, obrázky, experimenty a zdrojové kódy nájdete v mojom
-        <a href="#" target="_blank">GitHub repozitári</a>.
+        <a href="https://github.com/Berry023/Generovanie-3D-modelov-pomocou-velkeho-jazykoveho-modelu" target="_blank">GitHub repozitári</a>.
       </p>
     </section>
 
@@ -201,16 +188,16 @@
       <h2>Denník</h2>
       <div class="item-list">
         <div class="item">
-          <strong>Február -</strong> Spresnenie témy diplomovej práce, zoznámenie sa s cieľom práce a prvý prieskum možností generovania 3D modelov pomocou jazykových modelov.
+          <strong>Február -</strong> Spresnenie témy diplomovej práce a prvý prieskum možností generovania 3D modelov pomocou veľkých jazykových modelov.
         </div>
         <div class="item">
-          <strong>Marec -</strong> Štúdium existujúcich riešení a súvisiacich prác, hlavne prístupov založených na generovaní kódu pre Blender a na využití veľkých jazykových modelov.
+          <strong>Marec -</strong> Štúdium existujúcich riešení a súvisiacich prác, hlavne systémov, ktoré generujú Blender skripty alebo používajú LLM pri tvorbe 3D objektov.
         </div>
         <div class="item">
-          <strong>Apríl -</strong> Príprava teoretickej časti práce, testovanie Blender Python API a skúšanie jednoduchých skriptov na vytváranie základných 3D objektov.
+          <strong>Apríl -</strong> Príprava teoretickej časti práce, testovanie lokálneho jazykového modelu a skúšanie základných možností Blender Python API.
         </div>
         <div class="item">
-          <strong>Máj -</strong> Návrh základnej pipeline medzi textovým zadaním, jazykovým modelom, Pythonom a Blenderom. Príprava prvých testovacích príkladov pre generovanie objektov.
+          <strong>Máj -</strong> Návrh základnej pipeline medzi textovým zadaním, jazykovým modelom, Pythonom a Blenderom, spolu s prípravou prvých testovacích príkladov.
         </div>
       </div>
     </section>
