@@ -1,4 +1,152 @@
 <!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diplomová práca - Generovanie 3D modelov pomocou veľkého jazykového modelu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f2f2;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .top-panel {
+      margin: 18px 22px 28px;
+      padding: 30px 20px 34px;
+      background: #004e70;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+    }
+
+    .top-panel h1 {
+      margin: 0 0 20px;
+      font-size: 32px;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .top-panel p {
+      margin: 12px 0;
+      font-size: 17px;
+    }
+
+    .top-panel a {
+      color: #ffd400;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .top-panel a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto 48px;
+    }
+
+    .card {
+      background: white;
+      margin: 22px 0;
+      padding: 24px 24px 26px;
+      border-radius: 9px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+      margin: 0 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 3px solid #004e70;
+      color: #004e70;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    .card h3 {
+      margin: 18px 0 7px;
+      font-size: 20px;
+      color: #111;
+  }
+    }
+
+    a {
+      color: #0066cc;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .item-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .item {
+      padding: 12px 14px;
+      background: #e1f0ff;
+      border-left: 5px solid #004e70;
+      border-radius: 5px;
+      font-size: 17px;
+    }
+
+    .item a {
+      display: block;
+      width: 100%;
+    }
+
+    footer {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto 30px;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      .top-panel {
+        margin: 10px;
+        padding: 24px 14px 28px;
+      }
+
+      .top-panel h1 {
+        font-size: 24px;
+      }
+
+      .top-panel p,
+      .card p,
+      .item {
+        font-size: 16px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+
+      .card h2 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head> 
+
+<body>
+      <h3>Anotácia:</h3>
+      <p>
+        Diplomová práca sa zameriava na vytvorenie systému, ktorý dokáže z textového zadania
         v prirodzenom jazyku automaticky vygenerovať trojrozmerný model v programe Blender.
         Hlavnou časťou riešenia je využitie veľkého jazykového modelu, ktorý bude lokálne
         nainštalovaný a prispôsobený na oblasť 3D modelovania.
@@ -72,5 +220,4 @@
     © 2026 Bc. Filip Béreš
   </footer>
 </body>
-</html>
 </html>
