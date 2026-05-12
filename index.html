@@ -1,73 +1,72 @@
-
 <!DOCTYPE html>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diplomová práca - Generovanie 3D modelov pomocou veľkého jazykového modelu</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f2f2f2;
       color: #222;
       line-height: 1.6;
     }
 
-    .top-panel {
+    header {
       margin: 18px 22px 28px;
       padding: 30px 20px 34px;
-      background: #004e70;
+      background-color: #004e70;
       color: white;
       text-align: center;
       border-radius: 8px;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
     }
 
-    .top-panel h1 {
+    header h1 {
       margin: 0 0 20px;
       font-size: 32px;
       line-height: 1.25;
-      font-weight: 700;
     }
 
-    .top-panel p {
+    header p {
       margin: 12px 0;
       font-size: 17px;
     }
 
-    .top-panel a {
+    header a {
       color: #ffd400;
-      font-weight: 700;
+      font-weight: bold;
       text-decoration: none;
     }
 
-    .top-panel a:hover {
+    header a:hover {
       text-decoration: underline;
     }
 
-    .container {
-      width: min(900px, calc(100% - 32px));
-      margin: 0 auto 48px;
+    main {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      padding: 0 16px;
     }
 
-    .card {
+    section {
       background: white;
-      margin: 22px 0;
-      padding: 24px 24px 26px;
+      margin: 22px auto;
+      padding: 24px;
       border-radius: 9px;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
     }
     
-    .card h2 {
+      color: #004e70;
+      font-size: 28px;
+      border-bottom: 3px solid #004e70;
+    }
+
+    h3 {
+      margin: 18px 0 7px;
+      color: #111;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 8px 0 14px;
       font-size: 17px;
     }
 
     a {
       color: #0066cc;
-      font-weight: 700;
+      font-weight: bold;
       text-decoration: none;
     }
 
@@ -91,38 +90,38 @@
 
     .item a {
       display: block;
-      width: 100%;
     }
 
     footer {
-      width: min(900px, calc(100% - 32px));
+      max-width: 900px;
       margin: 0 auto 30px;
+      padding: 0 16px;
       text-align: center;
       color: #555;
       font-size: 14px;
     }
 
     @media (max-width: 650px) {
-      .top-panel {
+      header {
         margin: 10px;
         padding: 24px 14px 28px;
       }
-
-      .top-panel h1 {
+      
+      header h1 {
         font-size: 24px;
       }
 
-      .top-panel p,
-      .card p,
+      header p,
+      p,
       .item {
         font-size: 16px;
       }
 
-      .card {
+      section {
         padding: 18px;
       }
 
-      .card h2 {
+      h2 {
         font-size: 23px;
       }
     }
@@ -130,30 +129,38 @@
 </head>
 
 <body>
+  <header>
+    <h1>Diplomová práca - Generovanie 3D modelov pomocou veľkého jazykového modelu</h1>
+    <p><strong>Študent:</strong> Bc. Filip Béreš</p>
+    <p><strong>Názov práce:</strong> Generovanie 3D modelov pomocou veľkého jazykového modelu</p>
+    <p><strong>Školiteľ:</strong> Mgr. Andrej Mihálik, PhD.</p>
+    <p><strong>Kontakt:</strong> <a href="mailto:beres32@uniba.sk">beres32@uniba.sk</a></p>
+  </header>
+  <main>
+    <section>
+      <h2>Zadanie diplomovej práce</h2>
+
       <h3>Anotácia:</h3>
       <p>
         Diplomová práca sa zameriava na vytvorenie systému, ktorý dokáže z textového zadania
         v prirodzenom jazyku automaticky vygenerovať trojrozmerný model v programe Blender.
-        Kľúčovým prvkom riešenia je využitie veľkého jazykového modelu, ktorý bude lokálne
+        Kľúčovým prvkom riešenia je využitie veľkého jazykového modelu (LLM), ktorý bude lokálne
         nainštalovaný a prispôsobený na oblasť 3D modelovania.
       </p>
       <p>
         Systém bude fungovať tak, že jazykový model rozloží zložitejší objekt na jednotlivé časti,
         opíše ich základné parametre a tieto údaje sa následne spracujú v Pythone a prenesú do Blenderu.
-        Celý proces od textového zadania cez odpoveď modelu až po finálny 3D objekt bude testovaný
+        Celý proces – od textového zadania cez odpoveď modelu až po finálny 3D objekt – bude testovaný
         na viacerých príkladoch.
       </p>
-
-      <h3>Cieľ práce:</h3>
       <p>
-        Cieľom práce je navrhnúť a otestovať jednoduchú softvérovú pipeline, ktorá premení prirodzený
-        jazyk na vizuálny 3D objekt. Výsledkom práce bude ukážka toho, ako možno pomocou veľkého
-        jazykového modelu, Pythonu a Blenderu automatizovať tvorbu 3D modelov a otvoriť tak nové
-        možnosti pre kreatívne využitie umelej inteligencie v dizajne a digitálnom umení.
+        Výsledkom práce bude ukážka, ako možno pomocou veľkého jazykového modelu a jednoduchej
+        softvérovej pipeline premeniť prirodzený jazyk na vizuálny 3D objekt, čo otvára nové možnosti
+        pre kreatívne využitie umelej inteligencie v dizajne a digitálnom umení.
       </p>
     </section>
 
-    <section class="card">
+    <section>
       <h2>Zoznam zdrojov</h2>
       <div class="item-list">
         <div class="item"><a href="https://arxiv.org/abs/2409.12186" target="_blank">Qwen2.5-Coder Technical Report</a></div>
@@ -166,8 +173,7 @@
         <div class="item"><a href="https://ollama.com/" target="_blank">Ollama</a></div>
       </div>
     </section>
-
-    <section class="card">
+   <section>
       <h2>Aktuálny stav diplomovej práce</h2>
       <p>
         <a href="files/Generovanie_3D_modelov_pomocou_velkeho_jazykoveho_modelu.pdf" target="_blank">
@@ -176,7 +182,7 @@
       </p>
     </section>
 
-    <section class="card">
+    <section>
       <h2>Texty, obrázky, experimenty a zdrojové kódy</h2>
       <p>
         Všetky napísané texty, obrázky, experimenty a zdrojové kódy nájdete v mojom
@@ -184,7 +190,7 @@
       </p>
     </section>
 
-    <section class="card">
+    <section>
       <h2>Denník</h2>
       <div class="item-list">
         <div class="item">
